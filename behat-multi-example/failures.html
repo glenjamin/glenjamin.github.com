@@ -1,0 +1,1208 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns ="http://www.w3.org/1999/xhtml">
+<head>
+    <meta content="text/html;charset=utf-8"/>
+    <title>Behat Test Suite</title>
+    <link href="http://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css"/>
+    <style type="text/css">
+        body {
+            margin:0px;
+            padding:15px;
+            position:relative;
+        }
+        #behat {
+            font-family: Georgia, serif;
+            font-size:14px;
+            line-height:26px;
+        }
+        #behat h2, #behat h3, #behat h4 {
+            margin:0px 0px 5px 0px;
+            padding:0px;
+            font-family:Georgia;
+        }
+        #behat h2 .title, #behat h3 .title, #behat h4 .title {
+            font-weight:normal;
+        }
+        #behat .index {
+            border-collapse: collapse;
+            width: 100%;
+        }
+        #behat .index th, #behat .index td {
+            text-align: left;
+            border: 2px solid #666;
+            padding: 5px;
+        }
+        #behat .path {
+            font-size:10px;
+            font-weight:normal;
+            font-family: 'Bitstream Vera Sans Mono', 'DejaVu Sans Mono', Monaco, Courier, monospace !important;
+            color:#999;
+            padding:0px 5px;
+            float:right;
+        }
+        #behat h3 .path {
+            margin-right:4%;
+        }
+        #behat ul.tags {
+            font-size:14px;
+            font-weight:bold;
+            color:#246AC1;
+            list-style:none;
+            margin:0px;
+            padding:0px;
+        }
+        #behat ul.tags li {
+            display:inline;
+        }
+        #behat ul.tags li:after {
+            content:' ';
+        }
+        #behat ul.tags li:last-child:after {
+            content:'';
+        }
+        #behat .feature > p {
+            margin-top:0px;
+            margin-left:20px;
+        }
+        #behat .scenario {
+            margin-left:20px;
+            margin-bottom:40px;
+        }
+        #behat .scenario > ol {
+            margin:0px;
+            list-style:none;
+            margin-left:20px;
+            padding:0px;
+        }
+        #behat .scenario > ol:after {
+            content:'';
+            display:block;
+            clear:both;
+        }
+        #behat .scenario > ol li {
+            float:left;
+            width:95%;
+            padding-left:5px;
+            border-left:5px solid;
+            margin-bottom:4px;
+        }
+        #behat .scenario > ol li .argument {
+            margin:10px 20px;
+            font-size:16px;
+        }
+        #behat .scenario > ol li table.argument {
+            border:1px solid #d2d2d2;
+        }
+        #behat .scenario > ol li table.argument thead td {
+            font-weight: bold;
+        }
+        #behat .scenario > ol li table.argument td {
+            padding:5px 10px;
+            background:#f3f3f3;
+        }
+        #behat .scenario > ol li .keyword {
+            font-weight:bold;
+        }
+        #behat .scenario > ol li .path {
+            float:right;
+        }
+        #behat .scenario .examples {
+            margin-top:20px;
+            margin-left:40px;
+        }
+        #behat .scenario .examples table {
+            margin-left:20px;
+        }
+        #behat .scenario .examples table thead td {
+            font-weight:bold;
+            text-align:center;
+        }
+        #behat .scenario .examples table td {
+            padding:2px 10px;
+            font-size:16px;
+        }
+        #behat .scenario .examples table .failed.exception td {
+            border-left:5px solid #000;
+            border-color:#C20000 !important;
+            padding-left:0px;
+        }
+        pre {
+            font-family:monospace;
+        }
+        .snippet {
+            font-size:14px;
+            color:#000;
+            margin-left:20px;
+        }
+        .backtrace {
+            font-size:12px;
+            color:#C20000;
+            overflow:hidden;
+            margin-left:20px;
+        }
+        #behat .passed {
+            background:#DBFFB4;
+            border-color:#65C400 !important;
+            color:#3D7700;
+        }
+        #behat .failed {
+            background:#FFCCCC;
+            border-color:#C20000 !important;
+            color:#C20000;
+        }
+        #behat .undefined, #behat .pending {
+            border-color:#FAF834 !important;
+            background:#FCFB98;
+            color:#000;
+        }
+        #behat .skipped {
+            background:lightCyan;
+            border-color:cyan !important;
+            color:#000;
+        }
+        #behat .summary {
+            margin: 15px;
+            padding: 10px;
+            border-width: 2px;
+            border-style: solid;
+        }
+    </style>
+</head>
+<body>
+    <div id="behat">
+        
+<div class="back"><a href="javascript:history.go(-1)">Back to index</a></div>
+<h1>Failed Steps</h1>
+<ol>
+<li>
+<div class="scenario">
+<h3 id="line69">
+<span class="keyword">Scenario: </span>
+<span class="title">False "apples story"</span>
+<a class="path" href="features/features/environment.feature.html#line69">
+features/environment.feature:69
+</a>
+</h3>
+<ol>
+<li class="failed">
+<div class="step">
+<span class="keyword">Then </span>
+<span class="text">it should <strong class="failed_param">fail</strong> with:</span>
+<span class="path">
+features/steps/behat_steps.php:59
+</a>
+</div>
+<pre class="argument">..F..F...F.......F
+
+(::) failed steps (::)
+
+01. Failed asserting that &lt;integer:2&gt; is equal to &lt;integer:5&gt;.
+    In step `Then I should have 5 apples'. # features/steps/apple_steps.php:13
+    From scenario `I'm little hungry'.     # features/apples.feature:9
+
+02. Failed asserting that &lt;integer:13&gt; is equal to &lt;integer:10&gt;.
+    In step `Then I should have 10 apples'. # features/steps/apple_steps.php:13
+    From scenario `Found more apples'.      # features/apples.feature:13
+
+03. Failed asserting that &lt;integer:1&gt; is equal to &lt;integer:3&gt;.
+    In step `Then I should have 4 apples'.  # features/steps/apple_steps.php:13
+    From scenario `Other situations'.       # features/apples.feature:17
+
+04. Failed asserting that &lt;integer:3&gt; is equal to &lt;integer:4&gt;.
+    In step `Then I should have 4 apples'.  # features/steps/apple_steps.php:13
+    From scenario `Other situations'.       # features/apples.feature:17
+
+5 scenarios (1 passed, 4 failed)
+18 steps (14 passed, 4 failed)</pre>
+<pre class="backtrace">Failed asserting that two strings are equal.
+--- Expected
++++ Actual
+@@ @@
+ '..F..F...F.......F
+ 
+ (::) failed steps (::)
+ 
+-01. Failed asserting that &lt;integer:2&gt; is equal to &lt;integer:5&gt;.
++01. Failed asserting that 2 matches expected 5.
+     In step `Then I should have 5 apples'. # features/steps/apple_steps.php:13
+     From scenario `I'm little hungry'.     # features/apples.feature:9
+ 
+-02. Failed asserting that &lt;integer:13&gt; is equal to &lt;integer:10&gt;.
++02. Failed asserting that 13 matches expected 10.
+     In step `Then I should have 10 apples'. # features/steps/apple_steps.php:13
+     From scenario `Found more apples'.      # features/apples.feature:13
+ 
+-03. Failed asserting that &lt;integer:1&gt; is equal to &lt;integer:3&gt;.
++03. Failed asserting that 1 matches expected 3.
+     In step `Then I should have 4 apples'.  # features/steps/apple_steps.php:13
+     From scenario `Other situations'.       # features/apples.feature:17
+ 
+-04. Failed asserting that &lt;integer:3&gt; is equal to &lt;integer:4&gt;.
++04. Failed asserting that 3 matches expected 4.
+     In step `Then I should have 4 apples'.  # features/steps/apple_steps.php:13
+     From scenario `Other situations'.       # features/apples.feature:17
+ 
+ 5 scenarios (1 passed, 4 failed)
+ 18 steps (14 passed, 4 failed)'
+</pre>
+</li>
+</ol>
+</div>
+</li>
+<li>
+<div class="scenario">
+<h3 id="line353">
+<span class="keyword">Scenario: </span>
+<span class="title">Scenario outline examples table</span>
+<a class="path" href="features/features/html.feature.html#line353">
+features/html.feature:353
+</a>
+</h3>
+<ol>
+<li class="failed">
+<div class="step">
+<span class="keyword">Then </span>
+<span class="text">the output should contain:</span>
+<span class="path">
+features/steps/behat_steps.php:89
+</a>
+</div>
+<pre class="argument">&lt;div class=&quot;scenario outline&quot;&gt;
+&lt;h3&gt;
+&lt;span class=&quot;keyword&quot;&gt;Scenario Outline: &lt;/span&gt;
+&lt;span class=&quot;title&quot;&gt;Adding&lt;/span&gt;
+&lt;span class=&quot;path&quot;&gt;features/World.feature:9&lt;/span&gt;
+&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li class=&quot;skipped&quot;&gt;
+&lt;div class=&quot;step&quot;&gt;
+&lt;span class=&quot;keyword&quot;&gt;Then &lt;/span&gt;
+&lt;span class=&quot;text&quot;&gt;I must have &lt;strong class=&quot;skipped_param&quot;&gt;10&lt;/strong&gt;&lt;/span&gt;
+&lt;span class=&quot;path&quot;&gt;features/steps/math.php:9&lt;/span&gt;
+&lt;/div&gt;
+&lt;/li&gt;
+&lt;li class=&quot;skipped&quot;&gt;
+&lt;div class=&quot;step&quot;&gt;
+&lt;span class=&quot;keyword&quot;&gt;And &lt;/span&gt;
+&lt;span class=&quot;text&quot;&gt;I add the value &lt;strong class=&quot;skipped_param&quot;&gt;&lt;n&gt;&lt;/strong&gt;&lt;/span&gt;
+&lt;span class=&quot;path&quot;&gt;features/steps/math.php:16&lt;/span&gt;
+&lt;/div&gt;
+&lt;/li&gt;
+&lt;li class=&quot;skipped&quot;&gt;
+&lt;div class=&quot;step&quot;&gt;
+&lt;span class=&quot;keyword&quot;&gt;Then &lt;/span&gt;
+&lt;span class=&quot;text&quot;&gt;I must have &lt;strong class=&quot;skipped_param&quot;&gt;&lt;total&gt;&lt;/strong&gt;&lt;/span&gt;
+&lt;span class=&quot;path&quot;&gt;features/steps/math.php:9&lt;/span&gt;
+&lt;/div&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&quot;examples&quot;&gt;
+&lt;h4&gt;Examples&lt;/h4&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr class=&quot;skipped&quot;&gt;
+&lt;td&gt;n&lt;/td&gt;
+&lt;td&gt;total&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr class=&quot;passed&quot;&gt;
+&lt;td&gt;5&lt;/td&gt;
+&lt;td&gt;15&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&quot;failed&quot;&gt;
+&lt;td&gt;10&lt;/td&gt;
+&lt;td&gt;21&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&quot;failed exception&quot;&gt;
+&lt;td colspan=&quot;2&quot;&gt;
+&lt;pre class=&quot;backtrace&quot;&gt;Failed asserting that &amp;lt;integer:20&amp;gt; is equal to &amp;lt;string:21&amp;gt;.&lt;/pre&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;</pre>
+<pre class="backtrace">Failed asserting that '&lt;!DOCTYPE html PUBLIC &quot;-//W3C//DTD XHTML 1.0 Strict//EN&quot; &quot;http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd&quot;&gt;
+&lt;html xmlns =&quot;http://www.w3.org/1999/xhtml&quot;&gt;
+&lt;head&gt;
+    &lt;meta content=&quot;text/html;charset=utf-8&quot;/&gt;
+    &lt;title&gt;Behat Test Suite&lt;/title&gt;
+    &lt;link href=&quot;http://fonts.googleapis.com/css?family=Lobster&quot; rel=&quot;stylesheet&quot; type=&quot;text/css&quot;/&gt;
+    &lt;style type=&quot;text/css&quot;&gt;
+        body {
+            margin:0px;
+            padding:0px;
+            position:relative;
+        }
+        #behat {
+            float:left;
+            font-family: Georgia, serif;
+            font-size:18px;
+            line-height:26px;
+        }
+        #behat .statistics {
+            float:left;
+            width:100%;
+            margin-bottom:15px;
+        }
+        #behat .statistics:before {
+            content:'Behat';
+            position:absolute;
+            color: #1C4B20 !important;
+            text-shadow: white 1px 1px 1px;
+            font-size:48px !important;
+            font-family: Lobster, Tahoma;
+            top:22px;
+            left:20px;
+        }
+        #behat .statistics p {
+            text-align:right;
+            padding:5px 15px;
+            margin:0px;
+            border-right:10px solid #000;
+        }
+        #behat .statistics.failed p {
+            border-color:#C20000;
+        }
+        #behat .statistics.passed p {
+            border-color:#3D7700;
+        }
+        #behat .feature {
+            margin:15px;
+        }
+        #behat h2, #behat h3, #behat h4 {
+            margin:0px 0px 5px 0px;
+            padding:0px;
+            font-family:Georgia;
+        }
+        #behat h2 .title, #behat h3 .title, #behat h4 .title {
+            font-weight:normal;
+        }
+        #behat .path {
+            font-size:10px;
+            font-weight:normal;
+            font-family: 'Bitstream Vera Sans Mono', 'DejaVu Sans Mono', Monaco, Courier, monospace !important;
+            color:#999;
+            padding:0px 5px;
+            float:right;
+        }
+        #behat h3 .path {
+            margin-right:4%;
+        }
+        #behat ul.tags {
+            font-size:14px;
+            font-weight:bold;
+            color:#246AC1;
+            list-style:none;
+            margin:0px;
+            padding:0px;
+        }
+        #behat ul.tags li {
+            display:inline;
+        }
+        #behat ul.tags li:after {
+            content:' ';
+        }
+        #behat ul.tags li:last-child:after {
+            content:'';
+        }
+        #behat .feature &gt; p {
+            margin-top:0px;
+            margin-left:20px;
+        }
+        #behat .scenario {
+            margin-left:20px;
+            margin-bottom:40px;
+        }
+        #behat .scenario &gt; ol {
+            margin:0px;
+            list-style:none;
+            margin-left:20px;
+            padding:0px;
+        }
+        #behat .scenario &gt; ol:after {
+            content:'';
+            display:block;
+            clear:both;
+        }
+        #behat .scenario &gt; ol li {
+            float:left;
+            width:95%;
+            padding-left:5px;
+            border-left:5px solid;
+            margin-bottom:4px;
+        }
+        #behat .scenario &gt; ol li .argument {
+            margin:10px 20px;
+            font-size:16px;
+        }
+        #behat .scenario &gt; ol li table.argument {
+            border:1px solid #d2d2d2;
+        }
+        #behat .scenario &gt; ol li table.argument thead td {
+            font-weight: bold;
+        }
+        #behat .scenario &gt; ol li table.argument td {
+            padding:5px 10px;
+            background:#f3f3f3;
+        }
+        #behat .scenario &gt; ol li .keyword {
+            font-weight:bold;
+        }
+        #behat .scenario &gt; ol li .path {
+            float:right;
+        }
+        #behat .scenario .examples {
+            margin-top:20px;
+            margin-left:40px;
+        }
+        #behat .scenario .examples table {
+            margin-left:20px;
+        }
+        #behat .scenario .examples table thead td {
+            font-weight:bold;
+            text-align:center;
+        }
+        #behat .scenario .examples table td {
+            padding:2px 10px;
+            font-size:16px;
+        }
+        #behat .scenario .examples table .failed.exception td {
+            border-left:5px solid #000;
+            border-color:#C20000 !important;
+            padding-left:0px;
+        }
+        pre {
+            font-family:monospace;
+        }
+        .snippet {
+            font-size:14px;
+            color:#000;
+            margin-left:20px;
+        }
+        .backtrace {
+            font-size:12px;
+            color:#C20000;
+            overflow:hidden;
+            margin-left:20px;
+        }
+        #behat .passed {
+            background:#DBFFB4;
+            border-color:#65C400 !important;
+            color:#3D7700;
+        }
+        #behat .failed {
+            background:#FFFBD3;
+            border-color:#C20000 !important;
+            color:#C20000;
+        }
+        #behat .undefined, #behat .pending {
+            border-color:#FAF834 !important;
+            background:#FCFB98;
+            color:#000;
+        }
+        #behat .skipped {
+            background:lightCyan;
+            border-color:cyan !important;
+            color:#000;
+        }
+        #behat .summary {
+            margin: 15px;
+            padding: 10px;
+            border-width: 2px;
+            border-style: solid;
+        }
+    &lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;div id=&quot;behat&quot;&gt;
+
+&lt;div class=&quot;feature&quot;&gt;
+&lt;h2&gt;
+&lt;span class=&quot;keyword&quot;&gt;Feature: &lt;/span&gt;
+&lt;span class=&quot;title&quot;&gt;World consistency&lt;/span&gt;
+&lt;/h2&gt;
+&lt;p&gt;
+In order to maintain stable behaviors&lt;br /&gt;
+As a features developer&lt;br /&gt;
+I want, that &amp;quot;World&amp;quot; flushes between scenarios&lt;br /&gt;
+&lt;/p&gt;
+
+&lt;div class=&quot;scenario background&quot;&gt;
+&lt;h3&gt;
+&lt;span class=&quot;keyword&quot;&gt;Background: &lt;/span&gt;
+&lt;span class=&quot;path&quot;&gt;features/World.feature:6&lt;/span&gt;
+&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li class=&quot;passed&quot;&gt;
+&lt;div class=&quot;step&quot;&gt;
+&lt;span class=&quot;keyword&quot;&gt;Given &lt;/span&gt;
+&lt;span class=&quot;text&quot;&gt;I have entered &lt;strong class=&quot;passed_param&quot;&gt;10&lt;/strong&gt;&lt;/span&gt;
+&lt;span class=&quot;path&quot;&gt;features/steps/math.php:5&lt;/span&gt;
+&lt;/div&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+&lt;div class=&quot;scenario outline&quot;&gt;
+&lt;h3&gt;
+&lt;span class=&quot;keyword&quot;&gt;Scenario Outline: &lt;/span&gt;
+&lt;span class=&quot;title&quot;&gt;Adding&lt;/span&gt;
+&lt;span class=&quot;path&quot;&gt;features/World.feature:9&lt;/span&gt;
+&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li class=&quot;skipped&quot;&gt;
+&lt;div class=&quot;step&quot;&gt;
+&lt;span class=&quot;keyword&quot;&gt;Then &lt;/span&gt;
+&lt;span class=&quot;text&quot;&gt;I must have &lt;strong class=&quot;skipped_param&quot;&gt;10&lt;/strong&gt;&lt;/span&gt;
+&lt;span class=&quot;path&quot;&gt;features/steps/math.php:9&lt;/span&gt;
+&lt;/div&gt;
+&lt;/li&gt;
+&lt;li class=&quot;skipped&quot;&gt;
+&lt;div class=&quot;step&quot;&gt;
+&lt;span class=&quot;keyword&quot;&gt;And &lt;/span&gt;
+&lt;span class=&quot;text&quot;&gt;I add the value &lt;strong class=&quot;skipped_param&quot;&gt;&lt;n&gt;&lt;/strong&gt;&lt;/span&gt;
+&lt;span class=&quot;path&quot;&gt;features/steps/math.php:16&lt;/span&gt;
+&lt;/div&gt;
+&lt;/li&gt;
+&lt;li class=&quot;skipped&quot;&gt;
+&lt;div class=&quot;step&quot;&gt;
+&lt;span class=&quot;keyword&quot;&gt;Then &lt;/span&gt;
+&lt;span class=&quot;text&quot;&gt;I must have &lt;strong class=&quot;skipped_param&quot;&gt;&lt;total&gt;&lt;/strong&gt;&lt;/span&gt;
+&lt;span class=&quot;path&quot;&gt;features/steps/math.php:9&lt;/span&gt;
+&lt;/div&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&quot;examples&quot;&gt;
+&lt;h4&gt;Examples&lt;/h4&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr class=&quot;skipped&quot;&gt;
+&lt;td&gt;n&lt;/td&gt;
+&lt;td&gt;total&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr class=&quot;passed&quot;&gt;
+&lt;td&gt;5&lt;/td&gt;
+&lt;td&gt;15&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&quot;failed&quot;&gt;
+&lt;td&gt;10&lt;/td&gt;
+&lt;td&gt;21&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&quot;failed exception&quot;&gt;
+&lt;td colspan=&quot;2&quot;&gt;
+&lt;pre class=&quot;backtrace&quot;&gt;Failed asserting that 20 matches expected '21'.&lt;/pre&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;summary failed&quot;&gt;
+&lt;p class=&quot;scenarios&quot;&gt;
+2 scenarios (&lt;strong class=&quot;passed&quot;&gt;1 passed&lt;/strong&gt;, &lt;strong class=&quot;failed&quot;&gt;1 failed&lt;/strong&gt;)
+&lt;/p&gt;
+&lt;p class=&quot;steps&quot;&gt;
+8 steps (&lt;strong class=&quot;passed&quot;&gt;7 passed&lt;/strong&gt;, &lt;strong class=&quot;failed&quot;&gt;1 failed&lt;/strong&gt;)
+&lt;/p&gt;
+&lt;/div&gt;
+
+    &lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;' contains &quot;&lt;div class=&quot;scenario outline&quot;&gt;
+&lt;h3&gt;
+&lt;span class=&quot;keyword&quot;&gt;Scenario Outline: &lt;/span&gt;
+&lt;span class=&quot;title&quot;&gt;Adding&lt;/span&gt;
+&lt;span class=&quot;path&quot;&gt;features/World.feature:9&lt;/span&gt;
+&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li class=&quot;skipped&quot;&gt;
+&lt;div class=&quot;step&quot;&gt;
+&lt;span class=&quot;keyword&quot;&gt;Then &lt;/span&gt;
+&lt;span class=&quot;text&quot;&gt;I must have &lt;strong class=&quot;skipped_param&quot;&gt;10&lt;/strong&gt;&lt;/span&gt;
+&lt;span class=&quot;path&quot;&gt;features/steps/math.php:9&lt;/span&gt;
+&lt;/div&gt;
+&lt;/li&gt;
+&lt;li class=&quot;skipped&quot;&gt;
+&lt;div class=&quot;step&quot;&gt;
+&lt;span class=&quot;keyword&quot;&gt;And &lt;/span&gt;
+&lt;span class=&quot;text&quot;&gt;I add the value &lt;strong class=&quot;skipped_param&quot;&gt;&lt;n&gt;&lt;/strong&gt;&lt;/span&gt;
+&lt;span class=&quot;path&quot;&gt;features/steps/math.php:16&lt;/span&gt;
+&lt;/div&gt;
+&lt;/li&gt;
+&lt;li class=&quot;skipped&quot;&gt;
+&lt;div class=&quot;step&quot;&gt;
+&lt;span class=&quot;keyword&quot;&gt;Then &lt;/span&gt;
+&lt;span class=&quot;text&quot;&gt;I must have &lt;strong class=&quot;skipped_param&quot;&gt;&lt;total&gt;&lt;/strong&gt;&lt;/span&gt;
+&lt;span class=&quot;path&quot;&gt;features/steps/math.php:9&lt;/span&gt;
+&lt;/div&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&quot;examples&quot;&gt;
+&lt;h4&gt;Examples&lt;/h4&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr class=&quot;skipped&quot;&gt;
+&lt;td&gt;n&lt;/td&gt;
+&lt;td&gt;total&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr class=&quot;passed&quot;&gt;
+&lt;td&gt;5&lt;/td&gt;
+&lt;td&gt;15&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&quot;failed&quot;&gt;
+&lt;td&gt;10&lt;/td&gt;
+&lt;td&gt;21&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&quot;failed exception&quot;&gt;
+&lt;td colspan=&quot;2&quot;&gt;
+&lt;pre class=&quot;backtrace&quot;&gt;Failed asserting that &amp;lt;integer:20&amp;gt; is equal to &amp;lt;string:21&amp;gt;.&lt;/pre&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&quot;.
+</pre>
+</li>
+</ol>
+</div>
+</li>
+<li>
+<div class="scenario">
+<h3 id="line70">
+<span class="keyword">Scenario: </span>
+<span class="title">Pretty</span>
+<a class="path" href="features/features/i18n.feature.html#line70">
+features/i18n.feature:70
+</a>
+</h3>
+<ol>
+<li class="failed">
+<div class="step">
+<span class="keyword">Then </span>
+<span class="text">it should <strong class="failed_param">fail</strong> with:</span>
+<span class="path">
+features/steps/behat_steps.php:59
+</a>
+</div>
+<pre class="argument">Функционал: Постоянство мира
+  Чтобы поддерживать стабильными тесты
+  Как разработчик функционала
+  Я хочу чтобы Мир сбрасывался между сценариями
+
+  Предыстория:     # features/World.feature:7
+    Если Я ввел 10 # features/steps/math.php:5
+
+  Сценарий: Неопределен  # features/World.feature:10
+    То Я должен иметь 10 # features/steps/math.php:9
+    И Что-то новое
+    То Я должен иметь 10 # features/steps/math.php:9
+
+  Сценарий: В ожидании      # features/World.feature:15
+    То Я должен иметь 10    # features/steps/math.php:9
+    И Что-то еще не сделано # features/steps/math.php:17
+      TODO: write pending definition
+    То Я должен иметь 10    # features/steps/math.php:9
+
+  Сценарий: Провален        # features/World.feature:20
+    Если Я добавлю 4        # features/steps/math.php:13
+    То Я должен иметь 13    # features/steps/math.php:9
+      Failed asserting that &lt;integer:14&gt; is equal to &lt;string:13&gt;.
+
+  Структура сценария: Пройдено и Провалено # features/World.feature:24
+    Допустим Я должен иметь 10             # features/steps/math.php:9
+    Если Я добавлю &lt;значение&gt;              # features/steps/math.php:13
+    То Я должен иметь &lt;результат&gt;          # features/steps/math.php:9
+
+    Значения:
+      | значение | результат |
+      | 5        | 16        |
+        Failed asserting that &lt;integer:15&gt; is equal to &lt;string:16&gt;.
+      | 10       | 20        |
+      | 23       | 32        |
+        Failed asserting that &lt;integer:33&gt; is equal to &lt;string:32&gt;.
+
+6 сценариев (1 пройден, 1 в ожидании, 1 не определен, 3 провалено)
+23 шага (16 пройдено, 2 пропущено, 1 в ожидании, 1 не определен, 3 провалено)
+
+Вы можете реализовать определения для новых шагов с помощью этих шаблонов:
+
+$steps-&gt;И('/^Что-то новое$/', function($world) {
+    throw new \Behat\Behat\Exception\Pending();
+});</pre>
+<pre class="backtrace">Failed asserting that two strings are equal.
+--- Expected
++++ Actual
+@@ @@
+     То Я должен иметь 13    # features/steps/math.php:9
+-      Failed asserting that &lt;integer:14&gt; is equal to &lt;string:13&gt;.
++      Failed asserting that 14 matches expected '13'.
+
+@@ @@
+       | 5        | 16        |
+-        Failed asserting that &lt;integer:15&gt; is equal to &lt;string:16&gt;.
++        Failed asserting that 15 matches expected '16'.
+       | 10       | 20        |
+       | 23       | 32        |
+-        Failed asserting that &lt;integer:33&gt; is equal to &lt;string:32&gt;.
++        Failed asserting that 33 matches expected '32'.
+ 
+ 6 сценариев (1 пройден, 1 в ожидании, 1 не определен, 3 провалено)
+ 23 шага (16 пройдено, 2 пропущено, 1 в ожидании, 1 не определен, 3 провалено)
+ 
+ Вы можете реализовать определения для новых шагов с помощью этих шаблонов:
+ 
+ $steps-&gt;И('/^Что-то новое$/', function($world) {
+     throw new \Behat\Behat\Exception\Pending();
+ });'
+</pre>
+</li>
+</ol>
+</div>
+</li>
+<li>
+<div class="scenario">
+<h3 id="line121">
+<span class="keyword">Scenario: </span>
+<span class="title">Progress</span>
+<a class="path" href="features/features/i18n.feature.html#line121">
+features/i18n.feature:121
+</a>
+</h3>
+<ol>
+<li class="failed">
+<div class="step">
+<span class="keyword">Then </span>
+<span class="text">it should <strong class="failed_param">fail</strong> with:</span>
+<span class="path">
+features/steps/behat_steps.php:59
+</a>
+</div>
+<pre class="argument">..U-..P-..F...F.......F
+
+(::) проваленные шаги (::)
+
+01. Failed asserting that &lt;integer:14&gt; is equal to &lt;string:13&gt;.
+    In step `То Я должен иметь 13'. # features/steps/math.php:9
+    From scenario `Провален'.       # features/World.feature:20
+
+02. Failed asserting that &lt;integer:15&gt; is equal to &lt;string:16&gt;.
+    In step `То Я должен иметь 32'.       # features/steps/math.php:9
+    From scenario `Пройдено и Провалено'. # features/World.feature:24
+
+03. Failed asserting that &lt;integer:33&gt; is equal to &lt;string:32&gt;.
+    In step `То Я должен иметь 32'.       # features/steps/math.php:9
+    From scenario `Пройдено и Провалено'. # features/World.feature:24
+
+(::) шаги в ожидании (::)
+
+01. TODO: write pending definition
+    In step `И Что-то еще не сделано'.    # features/steps/math.php:17
+    From scenario `В ожидании'.           # features/World.feature:15
+
+6 сценариев (1 пройден, 1 в ожидании, 1 не определен, 3 провалено)
+23 шага (16 пройдено, 2 пропущено, 1 в ожидании, 1 не определен, 3 провалено)
+
+Вы можете реализовать определения для новых шагов с помощью этих шаблонов:
+
+$steps-&gt;И('/^Что-то новое$/', function($world) {
+    throw new \Behat\Behat\Exception\Pending();
+});</pre>
+<pre class="backtrace">Failed asserting that two strings are equal.
+--- Expected
++++ Actual
+@@ @@
+ '..U-..P-..F...F.......F
+ 
+ (::) проваленные шаги (::)
+ 
+-01. Failed asserting that &lt;integer:14&gt; is equal to &lt;string:13&gt;.
++01. Failed asserting that 14 matches expected '13'.
+     In step `То Я должен иметь 13'. # features/steps/math.php:9
+     From scenario `Провален'.       # features/World.feature:20
+ 
+-02. Failed asserting that &lt;integer:15&gt; is equal to &lt;string:16&gt;.
++02. Failed asserting that 15 matches expected '16'.
+     In step `То Я должен иметь 32'.       # features/steps/math.php:9
+     From scenario `Пройдено и Провалено'. # features/World.feature:24
+ 
+-03. Failed asserting that &lt;integer:33&gt; is equal to &lt;string:32&gt;.
++03. Failed asserting that 33 matches expected '32'.
+     In step `То Я должен иметь 32'.       # features/steps/math.php:9
+     From scenario `Пройдено и Провалено'. # features/World.feature:24
+ 
+ (::) шаги в ожидании (::)
+ 
+ 01. TODO: write pending definition
+     In step `И Что-то еще не сделано'.    # features/steps/math.php:17
+     From scenario `В ожидании'.           # features/World.feature:15
+ 
+ 6 сценариев (1 пройден, 1 в ожидании, 1 не определен, 3 провалено)
+ 23 шага (16 пройдено, 2 пропущено, 1 в ожидании, 1 не определен, 3 провалено)
+ 
+ Вы можете реализовать определения для новых шагов с помощью этих шаблонов:
+ 
+ $steps-&gt;И('/^Что-то новое$/', function($world) {
+     throw new \Behat\Behat\Exception\Pending();
+ });'
+</pre>
+</li>
+</ol>
+</div>
+</li>
+<li>
+<div class="scenario">
+<h3 id="line83">
+<span class="keyword">Scenario: </span>
+<span class="title"></span>
+<a class="path" href="features/features/instep_call.feature.html#line83">
+features/instep_call.feature:83
+</a>
+</h3>
+<ol>
+<li class="failed">
+<div class="step">
+<span class="keyword">Then </span>
+<span class="text">it should <strong class="failed_param">fail</strong> with:</span>
+<span class="path">
+features/steps/behat_steps.php:59
+</a>
+</div>
+<pre class="argument">..F
+
+(::) failed steps (::)
+
+01. Failed asserting that &lt;integer:7&gt; is equal to &lt;string:8&gt;.
+    In step `Then I should see &quot;8&quot; on the screen'. # features/steps/calc_steps_en.php:11
+    From scenario ***.                             # features/calc_en.feature:2
+
+1 scenario (1 failed)
+3 steps (2 passed, 1 failed)</pre>
+<pre class="backtrace">Failed asserting that two strings are equal.
+--- Expected
++++ Actual
+@@ @@
+ '..F
+ 
+ (::) failed steps (::)
+ 
+-01. Failed asserting that &lt;integer:7&gt; is equal to &lt;string:8&gt;.
++01. Failed asserting that 7 matches expected '8'.
+     In step `Then I should see &quot;8&quot; on the screen'. # features/steps/calc_steps_en.php:11
+     From scenario ***.                             # features/calc_en.feature:2
+ 
+ 1 scenario (1 failed)
+ 3 steps (2 passed, 1 failed)'
+</pre>
+</li>
+</ol>
+</div>
+</li>
+<li>
+<div class="scenario">
+<h3 id="line128">
+<span class="keyword">Scenario: </span>
+<span class="title"></span>
+<a class="path" href="features/features/instep_call.feature.html#line128">
+features/instep_call.feature:128
+</a>
+</h3>
+<ol>
+<li class="failed">
+<div class="step">
+<span class="keyword">Then </span>
+<span class="text">it should <strong class="failed_param">fail</strong> with:</span>
+<span class="path">
+features/steps/behat_steps.php:59
+</a>
+</div>
+<pre class="argument">..FF
+
+(::) failed steps (::)
+
+01. Failed asserting that &lt;integer:7&gt; is equal to &lt;string:8&gt;.
+    In step `То Я должен увидеть на экране &quot;8&quot;'. # features/steps/calc_steps_ru.php:10
+    From scenario ***.                           # features/calc_ru.feature:3
+
+02. Failed asserting that
+    Array
+    (
+        [username] =&gt; antono
+        [password] =&gt; 123
+    )
+     is equal to
+    Array
+    (
+        [username] =&gt; everzet
+        [password] =&gt; qwerty
+    )
+    .
+    In step `Допустим Я создам себе failing таблицу'. # features/steps/calc_steps_ru.php:17
+    From scenario ***.                                # features/calc_ru.feature:8
+
+2 scenarios (2 failed)
+4 steps (2 passed, 2 failed)</pre>
+<pre class="backtrace">Failed asserting that two strings are equal.
+--- Expected
++++ Actual
+@@ @@
+ '..FF
+ 
+ (::) failed steps (::)
+ 
+-01. Failed asserting that &lt;integer:7&gt; is equal to &lt;string:8&gt;.
++01. Failed asserting that 7 matches expected '8'.
+     In step `То Я должен увидеть на экране &quot;8&quot;'. # features/steps/calc_steps_ru.php:10
+     From scenario ***.                           # features/calc_ru.feature:3
+ 
+-02. Failed asserting that
+-    Array
+-    (
+-        [username] =&gt; antono
+-        [password] =&gt; 123
+-    )
+-     is equal to
+-    Array
+-    (
+-        [username] =&gt; everzet
+-        [password] =&gt; qwerty
+-    )
+-    .
++02. Failed asserting that two arrays are equal.
+     In step `Допустим Я создам себе failing таблицу'. # features/steps/calc_steps_ru.php:17
+     From scenario ***.                                # features/calc_ru.feature:8
+ 
+ 2 scenarios (2 failed)
+ 4 steps (2 passed, 2 failed)'
+</pre>
+</li>
+</ol>
+</div>
+</li>
+<li>
+<div class="scenario">
+<h3 id="line127">
+<span class="keyword">Scenario: </span>
+<span class="title">Multiple scenario outlines with failing steps</span>
+<a class="path" href="features/features/outlines.feature.html#line127">
+features/outlines.feature:127
+</a>
+</h3>
+<ol>
+<li class="failed">
+<div class="step">
+<span class="keyword">Then </span>
+<span class="text">it should <strong class="failed_param">fail</strong> with:</span>
+<span class="path">
+features/steps/behat_steps.php:59
+</a>
+</div>
+<pre class="argument">.........F....F.........F
+
+(::) failed steps (::)
+
+01. Failed asserting that &lt;integer:20&gt; is equal to &lt;string:15&gt;.
+    In step `Then The result should be 15'. # features/steps/math.php:38
+    From scenario ***.                      # features/math.feature:5
+
+02. Failed asserting that &lt;integer:6&gt; is equal to &lt;string:7&gt;.
+    In step `Then The result should be 7'.  # features/steps/math.php:38
+    From scenario ***.                      # features/math.feature:16
+
+03. Failed asserting that &lt;integer:5&gt; is equal to &lt;string:2&gt;.
+    In step `Then The result should be 2'.  # features/steps/math.php:38
+    From scenario ***.                      # features/math.feature:22
+
+5 scenarios (2 passed, 3 failed)
+25 steps (22 passed, 3 failed)</pre>
+<pre class="backtrace">Failed asserting that two strings are equal.
+--- Expected
++++ Actual
+@@ @@
+ '.........F....F.........F
+ 
+ (::) failed steps (::)
+ 
+-01. Failed asserting that &lt;integer:20&gt; is equal to &lt;string:15&gt;.
++01. Failed asserting that 20 matches expected '15'.
+     In step `Then The result should be 15'. # features/steps/math.php:38
+     From scenario ***.                      # features/math.feature:5
+ 
+-02. Failed asserting that &lt;integer:6&gt; is equal to &lt;string:7&gt;.
++02. Failed asserting that 6 matches expected '7'.
+     In step `Then The result should be 7'.  # features/steps/math.php:38
+     From scenario ***.                      # features/math.feature:16
+ 
+-03. Failed asserting that &lt;integer:5&gt; is equal to &lt;string:2&gt;.
++03. Failed asserting that 5 matches expected '2'.
+     In step `Then The result should be 2'.  # features/steps/math.php:38
+     From scenario ***.                      # features/math.feature:22
+ 
+ 5 scenarios (2 passed, 3 failed)
+ 25 steps (22 passed, 3 failed)'
+</pre>
+</li>
+</ol>
+</div>
+</li>
+<li>
+<div class="scenario">
+<h3 id="line14">
+<span class="keyword">Scenario: </span>
+<span class="title">Complex</span>
+<a class="path" href="features/features/pretty.feature.html#line14">
+features/pretty.feature:14
+</a>
+</h3>
+<ol>
+<li class="failed">
+<div class="step">
+<span class="keyword">Then </span>
+<span class="text">it should <strong class="failed_param">fail</strong> with:</span>
+<span class="path">
+features/steps/behat_steps.php:59
+</a>
+</div>
+<pre class="argument">Feature: World consistency
+  In order to maintain stable behaviors
+  As a features developer
+  I want, that &quot;World&quot; flushes between scenarios
+
+  Background:               # features/World.feature:6
+    Given I have entered 10 # features/steps/math.php:5
+
+  Scenario: Undefined       # features/World.feature:9
+    Then I must have 10     # features/steps/math.php:9
+    And Something new
+    Then I must have 10     # features/steps/math.php:9
+
+  Scenario: Pending            # features/World.feature:14
+    Then I must have 10        # features/steps/math.php:9
+    And Something not done yet # features/steps/math.php:17
+      TODO: write pending definition
+    Then I must have 10        # features/steps/math.php:9
+
+  Scenario: Failed             # features/World.feature:19
+    When I add 4               # features/steps/math.php:13
+    Then I must have 13        # features/steps/math.php:9
+      Failed asserting that &lt;integer:14&gt; is equal to &lt;string:13&gt;.
+
+  Scenario Outline: Passed &amp; Failed # features/World.feature:23
+    Given I must have 10            # features/steps/math.php:9
+    When I add &lt;value&gt;              # features/steps/math.php:13
+    Then I must have &lt;result&gt;       # features/steps/math.php:9
+
+    Examples:
+      | value | result |
+      | 5     | 16     |
+        Failed asserting that &lt;integer:15&gt; is equal to &lt;string:16&gt;.
+      | 10    | 20     |
+      | 23    | 32     |
+        Failed asserting that &lt;integer:33&gt; is equal to &lt;string:32&gt;.
+
+6 scenarios (1 passed, 1 pending, 1 undefined, 3 failed)
+23 steps (16 passed, 2 skipped, 1 pending, 1 undefined, 3 failed)
+
+You can implement step definitions for undefined steps with these snippets:
+
+$steps-&gt;And('/^Something new$/', function($world) {
+    throw new \Behat\Behat\Exception\Pending();
+});</pre>
+<pre class="backtrace">Failed asserting that two strings are equal.
+--- Expected
++++ Actual
+@@ @@
+     Then I must have 13        # features/steps/math.php:9
+-      Failed asserting that &lt;integer:14&gt; is equal to &lt;string:13&gt;.
++      Failed asserting that 14 matches expected '13'.
+
+@@ @@
+       | 5     | 16     |
+-        Failed asserting that &lt;integer:15&gt; is equal to &lt;string:16&gt;.
++        Failed asserting that 15 matches expected '16'.
+       | 10    | 20     |
+       | 23    | 32     |
+-        Failed asserting that &lt;integer:33&gt; is equal to &lt;string:32&gt;.
++        Failed asserting that 33 matches expected '32'.
+ 
+ 6 scenarios (1 passed, 1 pending, 1 undefined, 3 failed)
+ 23 steps (16 passed, 2 skipped, 1 pending, 1 undefined, 3 failed)
+ 
+ You can implement step definitions for undefined steps with these snippets:
+ 
+ $steps-&gt;And('/^Something new$/', function($world) {
+     throw new \Behat\Behat\Exception\Pending();
+ });'
+</pre>
+</li>
+</ol>
+</div>
+</li>
+<li>
+<div class="scenario">
+<h3 id="line145">
+<span class="keyword">Scenario: </span>
+<span class="title">Failed steps</span>
+<a class="path" href="features/features/result_types.feature.html#line145">
+features/result_types.feature:145
+</a>
+</h3>
+<ol>
+<li class="failed">
+<div class="step">
+<span class="keyword">Then </span>
+<span class="text">it should <strong class="failed_param">fail</strong> with:</span>
+<span class="path">
+features/steps/behat_steps.php:59
+</a>
+</div>
+<pre class="argument">.F..F-
+
+(::) failed steps (::)
+
+01. Failed asserting that &lt;integer:10&gt; is equal to &lt;string:12&gt;.
+    In step `Then I should see 12$ on the screen'. # features/steps/coffee_steps.php:7
+    From scenario `Check throwed amount'.          # features/coffee.feature:9
+
+02. Failed asserting that &lt;integer:30&gt; is equal to &lt;string:31&gt;.
+    In step `Then I should see 31$ on the screen'. # features/steps/coffee_steps.php:7
+    From scenario `Additional throws'.             # features/coffee.feature:12
+
+2 scenarios (2 failed)
+6 steps (3 passed, 1 skipped, 2 failed)</pre>
+<pre class="backtrace">Failed asserting that two strings are equal.
+--- Expected
++++ Actual
+@@ @@
+ '.F..F-
+ 
+ (::) failed steps (::)
+ 
+-01. Failed asserting that &lt;integer:10&gt; is equal to &lt;string:12&gt;.
++01. Failed asserting that 10 matches expected '12'.
+     In step `Then I should see 12$ on the screen'. # features/steps/coffee_steps.php:7
+     From scenario `Check throwed amount'.          # features/coffee.feature:9
+ 
+-02. Failed asserting that &lt;integer:30&gt; is equal to &lt;string:31&gt;.
++02. Failed asserting that 30 matches expected '31'.
+     In step `Then I should see 31$ on the screen'. # features/steps/coffee_steps.php:7
+     From scenario `Additional throws'.             # features/coffee.feature:12
+ 
+ 2 scenarios (2 failed)
+ 6 steps (3 passed, 1 skipped, 2 failed)'
+</pre>
+</li>
+</ol>
+</div>
+</li>
+</ol>
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,480 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns ="http://www.w3.org/1999/xhtml">
+<head>
+    <meta content="text/html;charset=utf-8"/>
+    <title>Behat Test Suite</title>
+    <link href="http://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css"/>
+    <style type="text/css">
+        body {
+            margin:0px;
+            padding:15px;
+            position:relative;
+        }
+        #behat {
+            font-family: Georgia, serif;
+            font-size:14px;
+            line-height:26px;
+        }
+        #behat h2, #behat h3, #behat h4 {
+            margin:0px 0px 5px 0px;
+            padding:0px;
+            font-family:Georgia;
+        }
+        #behat h2 .title, #behat h3 .title, #behat h4 .title {
+            font-weight:normal;
+        }
+        #behat .index {
+            border-collapse: collapse;
+            width: 100%;
+        }
+        #behat .index th, #behat .index td {
+            text-align: left;
+            border: 2px solid #666;
+            padding: 5px;
+        }
+        #behat .path {
+            font-size:10px;
+            font-weight:normal;
+            font-family: 'Bitstream Vera Sans Mono', 'DejaVu Sans Mono', Monaco, Courier, monospace !important;
+            color:#999;
+            padding:0px 5px;
+            float:right;
+        }
+        #behat h3 .path {
+            margin-right:4%;
+        }
+        #behat ul.tags {
+            font-size:14px;
+            font-weight:bold;
+            color:#246AC1;
+            list-style:none;
+            margin:0px;
+            padding:0px;
+        }
+        #behat ul.tags li {
+            display:inline;
+        }
+        #behat ul.tags li:after {
+            content:' ';
+        }
+        #behat ul.tags li:last-child:after {
+            content:'';
+        }
+        #behat .feature > p {
+            margin-top:0px;
+            margin-left:20px;
+        }
+        #behat .scenario {
+            margin-left:20px;
+            margin-bottom:40px;
+        }
+        #behat .scenario > ol {
+            margin:0px;
+            list-style:none;
+            margin-left:20px;
+            padding:0px;
+        }
+        #behat .scenario > ol:after {
+            content:'';
+            display:block;
+            clear:both;
+        }
+        #behat .scenario > ol li {
+            float:left;
+            width:95%;
+            padding-left:5px;
+            border-left:5px solid;
+            margin-bottom:4px;
+        }
+        #behat .scenario > ol li .argument {
+            margin:10px 20px;
+            font-size:16px;
+        }
+        #behat .scenario > ol li table.argument {
+            border:1px solid #d2d2d2;
+        }
+        #behat .scenario > ol li table.argument thead td {
+            font-weight: bold;
+        }
+        #behat .scenario > ol li table.argument td {
+            padding:5px 10px;
+            background:#f3f3f3;
+        }
+        #behat .scenario > ol li .keyword {
+            font-weight:bold;
+        }
+        #behat .scenario > ol li .path {
+            float:right;
+        }
+        #behat .scenario .examples {
+            margin-top:20px;
+            margin-left:40px;
+        }
+        #behat .scenario .examples table {
+            margin-left:20px;
+        }
+        #behat .scenario .examples table thead td {
+            font-weight:bold;
+            text-align:center;
+        }
+        #behat .scenario .examples table td {
+            padding:2px 10px;
+            font-size:16px;
+        }
+        #behat .scenario .examples table .failed.exception td {
+            border-left:5px solid #000;
+            border-color:#C20000 !important;
+            padding-left:0px;
+        }
+        pre {
+            font-family:monospace;
+        }
+        .snippet {
+            font-size:14px;
+            color:#000;
+            margin-left:20px;
+        }
+        .backtrace {
+            font-size:12px;
+            color:#C20000;
+            overflow:hidden;
+            margin-left:20px;
+        }
+        #behat .passed {
+            background:#DBFFB4;
+            border-color:#65C400 !important;
+            color:#3D7700;
+        }
+        #behat .failed {
+            background:#FFCCCC;
+            border-color:#C20000 !important;
+            color:#C20000;
+        }
+        #behat .undefined, #behat .pending {
+            border-color:#FAF834 !important;
+            background:#FCFB98;
+            color:#000;
+        }
+        #behat .skipped {
+            background:lightCyan;
+            border-color:cyan !important;
+            color:#000;
+        }
+        #behat .summary {
+            margin: 15px;
+            padding: 10px;
+            border-width: 2px;
+            border-style: solid;
+        }
+    </style>
+</head>
+<body>
+    <div id="behat">
+        
+<div class="back"><a href="javascript:history.go(-1)">Back to index</a></div>
+<div class="feature">
+<div class="feature">
+<h2>
+<span class="keyword">Feature: </span>
+<span class="title">Pretty Formatter</span>
+</h2>
+<p>
+In order to debug features<br />
+As a feature writer<br />
+I need to have pretty formatter<br />
+</p>
+
+<div class="scenario background">
+<h3 id="line6">
+<span class="keyword">Background: </span>
+<span class="path">
+features/pretty.feature:6
+</span>
+</h3>
+<ol>
+<li class="passed">
+<div class="step">
+<span class="keyword">Given </span>
+<span class="text">a file named "<strong class="passed_param">features/support/bootstrap.php</strong>" with:</span>
+<span class="path">
+features/steps/behat_steps.php:7
+</span>
+</div>
+<pre class="argument">&lt;?php
+require_once 'PHPUnit/Autoload.php';
+require_once 'PHPUnit/Framework/Assert/Functions.php';</pre>
+</li>
+</ol>
+</div>
+<div class="scenario">
+<h3 id="line14">
+<span class="keyword">Scenario: </span>
+<span class="title">Complex</span>
+<span class="path">
+features/pretty.feature:14
+</span>
+</h3>
+<ol>
+<li class="passed">
+<div class="step">
+<span class="keyword">Given </span>
+<span class="text">a file named "<strong class="passed_param">features/steps/math.php</strong>" with:</span>
+<span class="path">
+features/steps/behat_steps.php:7
+</span>
+</div>
+<pre class="argument">&lt;?php
+$steps-&gt;Given('/I have entered (\d+)/', function($world, $num) {
+    assertObjectNotHasAttribute('value', $world);
+    $world-&gt;value = $num;
+});
+
+$steps-&gt;Then('/I must have (\d+)/', function($world, $num) {
+    assertEquals($num, $world-&gt;value);
+});
+
+$steps-&gt;When('/I add (\d+)/', function($world, $num) {
+    $world-&gt;value += $num;
+});
+
+$steps-&gt;And('/^Something not done yet$/', function($world) {
+    throw new \Behat\Behat\Exception\Pending();
+});</pre>
+</li>
+<li class="passed">
+<div class="step">
+<span class="keyword">And </span>
+<span class="text">a file named "<strong class="passed_param">features/World.feature</strong>" with:</span>
+<span class="path">
+features/steps/behat_steps.php:7
+</span>
+</div>
+<pre class="argument">Feature: World consistency
+  In order to maintain stable behaviors
+  As a features developer
+  I want, that &quot;World&quot; flushes between scenarios
+
+  Background:
+    Given I have entered 10
+
+  Scenario: Undefined
+    Then I must have 10
+    And Something new
+    Then I must have 10
+
+  Scenario: Pending
+    Then I must have 10
+    And Something not done yet
+    Then I must have 10
+
+  Scenario: Failed
+    When I add 4
+    Then I must have 13
+
+  Scenario Outline: Passed &amp; Failed
+    Given I must have 10
+    When I add &lt;value&gt;
+    Then I must have &lt;result&gt;
+
+    Examples:
+      | value | result |
+      |  5    | 16     |
+      |  10   | 20     |
+      |  23   | 32     |</pre>
+</li>
+<li class="passed">
+<div class="step">
+<span class="keyword">When </span>
+<span class="text">I run "behat <strong class="passed_param">-f pretty</strong>"</span>
+<span class="path">
+features/steps/behat_steps.php:20
+</span>
+</div>
+</li>
+<li class="failed">
+<div class="step">
+<span class="keyword">Then </span>
+<span class="text">it should <strong class="failed_param">fail</strong> with:</span>
+<span class="path">
+features/steps/behat_steps.php:59
+</span>
+</div>
+<pre class="argument">Feature: World consistency
+  In order to maintain stable behaviors
+  As a features developer
+  I want, that &quot;World&quot; flushes between scenarios
+
+  Background:               # features/World.feature:6
+    Given I have entered 10 # features/steps/math.php:5
+
+  Scenario: Undefined       # features/World.feature:9
+    Then I must have 10     # features/steps/math.php:9
+    And Something new
+    Then I must have 10     # features/steps/math.php:9
+
+  Scenario: Pending            # features/World.feature:14
+    Then I must have 10        # features/steps/math.php:9
+    And Something not done yet # features/steps/math.php:17
+      TODO: write pending definition
+    Then I must have 10        # features/steps/math.php:9
+
+  Scenario: Failed             # features/World.feature:19
+    When I add 4               # features/steps/math.php:13
+    Then I must have 13        # features/steps/math.php:9
+      Failed asserting that &lt;integer:14&gt; is equal to &lt;string:13&gt;.
+
+  Scenario Outline: Passed &amp; Failed # features/World.feature:23
+    Given I must have 10            # features/steps/math.php:9
+    When I add &lt;value&gt;              # features/steps/math.php:13
+    Then I must have &lt;result&gt;       # features/steps/math.php:9
+
+    Examples:
+      | value | result |
+      | 5     | 16     |
+        Failed asserting that &lt;integer:15&gt; is equal to &lt;string:16&gt;.
+      | 10    | 20     |
+      | 23    | 32     |
+        Failed asserting that &lt;integer:33&gt; is equal to &lt;string:32&gt;.
+
+6 scenarios (1 passed, 1 pending, 1 undefined, 3 failed)
+23 steps (16 passed, 2 skipped, 1 pending, 1 undefined, 3 failed)
+
+You can implement step definitions for undefined steps with these snippets:
+
+$steps-&gt;And('/^Something new$/', function($world) {
+    throw new \Behat\Behat\Exception\Pending();
+});</pre>
+<pre class="backtrace">Failed asserting that two strings are equal.
+--- Expected
++++ Actual
+@@ @@
+     Then I must have 13        # features/steps/math.php:9
+-      Failed asserting that &lt;integer:14&gt; is equal to &lt;string:13&gt;.
++      Failed asserting that 14 matches expected '13'.
+
+@@ @@
+       | 5     | 16     |
+-        Failed asserting that &lt;integer:15&gt; is equal to &lt;string:16&gt;.
++        Failed asserting that 15 matches expected '16'.
+       | 10    | 20     |
+       | 23    | 32     |
+-        Failed asserting that &lt;integer:33&gt; is equal to &lt;string:32&gt;.
++        Failed asserting that 33 matches expected '32'.
+ 
+ 6 scenarios (1 passed, 1 pending, 1 undefined, 3 failed)
+ 23 steps (16 passed, 2 skipped, 1 pending, 1 undefined, 3 failed)
+ 
+ You can implement step definitions for undefined steps with these snippets:
+ 
+ $steps-&gt;And('/^Something new$/', function($world) {
+     throw new \Behat\Behat\Exception\Pending();
+ });'
+</pre>
+</li>
+</ol>
+</div>
+<div class="scenario">
+<h3 id="line120">
+<span class="keyword">Scenario: </span>
+<span class="title">Multiple parameters</span>
+<span class="path">
+features/pretty.feature:120
+</span>
+</h3>
+<ol>
+<li class="passed">
+<div class="step">
+<span class="keyword">Given </span>
+<span class="text">a file named "<strong class="passed_param">features/steps/math.php</strong>" with:</span>
+<span class="path">
+features/steps/behat_steps.php:7
+</span>
+</div>
+<pre class="argument">&lt;?php
+$steps-&gt;Given('/I have entered (\d+)/', function($world, $num) {
+    assertObjectNotHasAttribute('value', $world);
+    $world-&gt;value = $num;
+});
+
+$steps-&gt;Then('/I must have (\d+)/', function($world, $num) {
+    assertEquals($num, $world-&gt;value);
+});
+
+$steps-&gt;When('/I (add|subtract) the value (\d+)/', function($world, $op, $num) {
+    if ($op == 'add')
+      $world-&gt;value += $num;
+    elseif ($op == 'subtract')
+      $world-&gt;value -= $num;
+});</pre>
+</li>
+<li class="passed">
+<div class="step">
+<span class="keyword">And </span>
+<span class="text">a file named "<strong class="passed_param">features/World.feature</strong>" with:</span>
+<span class="path">
+features/steps/behat_steps.php:7
+</span>
+</div>
+<pre class="argument">Feature: World consistency
+  In order to maintain stable behaviors
+  As a features developer
+  I want, that &quot;World&quot; flushes between scenarios
+
+  Background:
+    Given I have entered 10
+
+  Scenario: Adding
+    Then I must have 10
+    And I add the value 6
+    Then I must have 16
+
+  Scenario: Subtracting
+    Then I must have 10
+    And I subtract the value 6
+    Then I must have 4</pre>
+</li>
+<li class="passed">
+<div class="step">
+<span class="keyword">When </span>
+<span class="text">I run "behat <strong class="passed_param">-f pretty --colors</strong>"</span>
+<span class="path">
+features/steps/behat_steps.php:20
+</span>
+</div>
+</li>
+<li class="passed">
+<div class="step">
+<span class="keyword">Then </span>
+<span class="text">it should <strong class="passed_param">pass</strong> with:</span>
+<span class="path">
+features/steps/behat_steps.php:59
+</span>
+</div>
+<pre class="argument">Feature: World consistency
+  In order to maintain stable behaviors
+  As a features developer
+  I want, that &quot;World&quot; flushes between scenarios
+
+  Background:               [30m# features/World.feature:6[0m
+    [32mGiven I have entered [0m[32;1m10[0m[32m[0m [30m# features/steps/math.php:5[0m
+
+  Scenario: Adding          [30m# features/World.feature:9[0m
+    [32mThen I must have [0m[32;1m10[0m[32m[0m     [30m# features/steps/math.php:9[0m
+    [32mAnd I [0m[32;1madd[0m[32m the value [0m[32;1m6[0m[32m[0m   [30m# features/steps/math.php:16[0m
+    [32mThen I must have [0m[32;1m16[0m[32m[0m     [30m# features/steps/math.php:9[0m
+
+  Scenario: Subtracting        [30m# features/World.feature:14[0m
+    [32mThen I must have [0m[32;1m10[0m[32m[0m        [30m# features/steps/math.php:9[0m
+    [32mAnd I [0m[32;1msubtract[0m[32m the value [0m[32;1m6[0m[32m[0m [30m# features/steps/math.php:16[0m
+    [32mThen I must have [0m[32;1m4[0m[32m[0m         [30m# features/steps/math.php:9[0m
+
+2 scenarios ([32m2 passed[0m)
+8 steps ([32m8 passed[0m)</pre>
+</li>
+</ol>
+</div>
+</div>
+
+    </div>
+</body>
+</html>
